@@ -1,0 +1,178 @@
+.formWrapper, .settings{
+  margin-left: 22%;
+  margin-top: 60px;
+  padding: 40px;
+}
+.deleteWrapper{
+  margin-left: 22%;
+  margin-top: 60px;
+  padding: 40px;
+  display: grid;
+  place-items: center;
+  height: 90vh;
+}
+.formWrapper form, .settings form{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 3%;
+}
+.deleteWrapper form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 400px;
+  margin-top: -100px;
+}
+.formWrapper form .inputWrapper, .settings form .inputWrapper{
+  width: 31.3%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  justify-content: flex-end;
+}
+.deleteWrapper form .inputWrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.formWrapper .inputWrapper input, .formWrapper .inputWrapper select, .deleteWrapper .inputWrapper input, .settings .inputWrapper input{
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 5px;
+  padding: 8px 10px;
+  outline: none;
+}
+.formWrapper .inputWrapper input:focus, .deleteWrapper 
+.inputWrapper input:focus, .settings .inputWrapper input:focus{
+  border: 2px solid rgb(72, 147, 63)
+  /* border: 2px solid rgb(4, 17, 63) */
+}
+.formWrapper .inputWrapper select:focus{
+  border: 2px solid rgb(72, 147, 63)
+  /* border: 2px solid rgb(4, 17, 63) */
+}
+.formWrapper .button, .deleteWrapper .button{
+  background-color: rgb(4, 17, 63);
+  /* background-color: rgb(4, 17, 63); */
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+}
+.formWrapper .disabled, .deleteWrapper .disabled{
+  background-color: rgb(75, 77, 82);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+}
+.settings .button{
+  background-color: rgb(4, 17, 63);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+}
+.settings .disabled{
+  background-color: rgb(75, 77, 82);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: not-allowed;
+}
+
+.formWrapper .button:hover, .deleteWrapper .button:hover, .settings .button:hover{
+  cursor: pointer;
+  background-color: rgb(72,187,120);
+  border: none;
+  transition: 500ms;
+  
+}
+input::-webkit-outer-spin-.button,
+input::-webkit-inner-spin-.button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.password{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.hide{
+  display: none;
+}
+.error{
+  display: flex;
+  font-size: 14px;
+  color: maroon;
+  font-weight: 500;
+}
+@media(max-width: 1000px){
+  .formWrapper, .deleteWrapper, .settings{
+      margin-left: 60px;
+  }
+  .settings{
+      margin-top: 60px;
+  }
+}
+@media(max-width: 800px){
+  .formWrapper form .inputWrapper,  .settings form .inputWrapper{
+      width: 48.5%;
+  }
+  .formWrapper .inputWrapper:last-child{
+      margin-top: 21px;
+  }
+  .settings .inputWrapper:last-child{
+      margin-top: -15px;
+  }
+}
+@media(max-width: 600px){
+  .formWrapper, .deleteWrapper, .settings{
+      margin-left: 65px;
+      padding: 35px 20px;
+  }
+  .deleteWrapper{
+      display: flex;
+      align-items: flex-start;
+  }
+  .formWrapper form,  .settings form{
+      margin-top: 15px;
+  }
+  .deleteWrapper form{
+      width: 100%;
+      margin-top: 15px;
+  }
+  .formWrapper form .inputWrapper,  .settings form .inputWrapper{
+      width: 100%;
+  }
+  .formWrapper .inputWrapper:last-child{
+      margin-top: 10px;
+  }
+  .profile{
+      margin-top: 15px;
+      row-gap: 10px;
+  }
+}
+@media(max-width: 500px){
+  .formWrapper, .deleteWrapper, .settings{
+      margin-left: 45px;
+      padding: 15px 20px;
+  }
+  .deleteWrapper form .inputWrapper label{
+      font-size: 15px;
+  }
+  .formWrapper form .inputWrapper label, .settings form .inputWrapper label{
+      font-size: 15px;
+  }
+}

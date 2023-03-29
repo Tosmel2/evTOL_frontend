@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+.hmbg{
+  background-image: url('./assets/hmbg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
+  position: relative;
+}
+.hmbg::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+

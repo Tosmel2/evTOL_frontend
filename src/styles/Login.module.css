@@ -1,0 +1,131 @@
+
+.wrapper{
+  background-color: rgb(2, 12, 47);
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.wrapper .formWrapper{
+  width: 30%;
+  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px;
+  background-color: white;
+  border-radius: 5px;
+}
+.wrapper .formWrapper .head{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+  text-align: center;
+}
+.wrapper .formWrapper h1{
+  text-align: center;
+}
+.wrapper .formWrapper form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 20px;
+  column-gap: 3%;
+}
+.wrapper .formWrapper form .inputWrapper{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  justify-content: flex-end;
+}
+.wrapper .formWrapper .inputWrapper input{
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 5px;
+  padding: 8px 10px;
+  outline: none;
+}
+.wrapper .formWrapper .inputWrapper input:focus{
+  border: 2px solid rgb(7, 83, 39);
+}
+.wrapper .formWrapper .inputWrapper select:focus{
+  border: 2px solid rgb(7, 83, 39);
+}
+.wrapper .formWrapper .button{
+  background-color: rgb(7, 83, 39);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+}
+.wrapper .formWrapper .button:hover{
+  cursor: pointer;
+  background-color: rgb(72,187,120);;
+  border: none;
+  transition: 500ms;
+  
+}
+.wrapper .formWrapper .disabled{
+  background-color: rgb(67, 68, 72);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+}
+
+@media(max-width: 1300px){
+
+  .wrapper .formWrapper{
+      width: 40%;
+  }
+}
+@media(max-width: 1000px){
+
+  .wrapper .formWrapper{
+      width: 50%;
+  }
+}
+@media(max-width: 750px){
+
+  .wrapper .formWrapper{
+      width: 70%;
+  }
+  .wrapper .formWrapper h1{
+      font-size: 30px;
+  }
+  .wrapper .formWrapper form label{
+      font-size: 14px;
+  }
+}
+@media(max-width: 500px){
+
+  .wrapper .formWrapper{
+      width: 100%;
+  }
+}
+@media(max-width: 500px){
+
+  .wrapper .formWrapper{
+      width: 100%;
+      padding: 30px 20px;
+      border-radius: 0px;
+  }
+  .wrapper .formWrapper h1{
+      font-size: 30px;
+  }
+  .wrapper .formWrapper .head p{
+      font-size: 15px;
+  }
+  .wrapper .formWrapper form label{
+      font-size: 14px;
+  }
+}
+@media(max-width: 350px){
+
+  .wrapper .formWrapper{
+      padding: 30px 15px;
+  }
+  .wrapper .formWrapper h1{
+      font-size: 28px;
+  }
+}

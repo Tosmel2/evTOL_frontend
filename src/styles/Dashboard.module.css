@@ -1,0 +1,134 @@
+.hero{
+  margin-left: 22%;
+  margin-top: 60px;
+  padding: 40px;
+}
+.emptyWrapper{
+  width: 100%;
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+}
+.empty{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.empty svg{
+  font-size: 80px;
+}
+.empty h3{
+  font-size: 30px;
+}
+
+.cardWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3%;
+  row-gap: 30px;
+}
+/* rgb(4, 17, 63) */
+.evtolCard{
+  width: 31.3%;
+  border:  1px solid rgb(177, 177, 177);
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.evtolCard .head{
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.evtolCard .content{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+  font-size: 15px;
+  color: rgb(60, 60, 60);
+  font-weight: 500;
+}
+.evtolCard .content span{
+  font-weight: 600;
+  color: black;
+}
+.evtolCard button{
+  background-color:  rgb(9, 82, 39);
+  border: 0px;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+.evtolCard button:hover{
+  background-color: rgb(72,187,120);;
+  cursor: pointer
+}
+.loading{
+  width: 70%;
+  height: 50vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* padding-left: 10rem; */
+  display: grid;
+  place-items: center;
+  border:2px solid red;
+}
+
+@media(max-width: 1000px){
+  .hero{
+      margin-left: 60px;
+  }
+}
+@media(max-width: 750px){
+  .hero{
+      margin-left: 60px;
+  }
+  .cardWrapper{
+      row-gap: 20px;
+  }
+  .evtolCard{
+      width: 48.5%;
+  }
+}
+@media(max-width: 600px){
+  .hero{
+      margin-left: 60px;
+  }
+  .cardWrapper{
+      row-gap: 20px;
+  }
+  .evtolCard{
+      width: 100%;
+  }
+}
+@media(max-width: 500px){
+  .hero{
+      margin-left: 45px;
+      padding: 40px 20px;
+  }
+  
+}
+@media(max-width: 400px){
+  .hero{
+      margin-left: 45px;
+      padding: 40px 20px;
+  }
+  .evtolCard{
+      padding: 10px;
+  }
+  .evtolCard h3{
+      font-size: 16px;
+  }
+  .evtolCard p{
+      font-size: 14px;
+  }
+  .evtolCard button{
+      font-size: 14px;
+  }
+  
+}
