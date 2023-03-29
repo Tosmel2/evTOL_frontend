@@ -21,7 +21,7 @@ import {
   RiDashboardLine,
 } from 'react-icons/ri'
 const LinkItems = [
-  { name: 'DashboardItems', icon: RiDashboardLine, path: '/dashboard' },
+  { name: 'Dashboard', icon: RiDashboardLine, path: '/dashboard' },
   { name: 'Tracking', icon: FiTrendingUp, path: '/tracking' },
   { name: 'Shipments', icon: FiCompass, path: '/shipments' },
   { name: 'Settings', icon:FiSettings, path: '/settings' },

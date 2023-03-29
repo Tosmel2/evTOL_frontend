@@ -91,7 +91,7 @@ const DashboardItems = ({
         </DrawerContent>
       </Drawer>
       {/* mobilenav */}
-      <MobileNav onOpen={onOpen} navTitle= {`Welcome ${name}`}/>
+      <MobileNav onOpen={onOpen} navTitle= {`Welcome ${name.firstname}`}/>
       <Box ml={{ base: 0, md: 60 }}p="1">
         {children}
       </Box>
