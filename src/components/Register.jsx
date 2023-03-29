@@ -9,7 +9,7 @@ import {useNavigate} from "react-router"
 import "../styles/signup.css"
 
 
-export default function SignUp() {
+export default function Register() {
   const [status, setStatus] = useState(true)
   const[user, setUser] = useState({
       firstname: "",
@@ -59,7 +59,7 @@ export default function SignUp() {
                 timer: 1500
             });
               setTimeout(() => {
-                  navigate("/signin");
+                  navigate("/login");
               }, 1500)
         }
     }).catch(error => {
@@ -101,7 +101,7 @@ export default function SignUp() {
             <button className='signup-btn' onClick={()=>navigate('/login')}>Sign Up</button>
           </div>
           <div>
-            <p>Already have an account ? <span style={{color:'#DD6B20', cursor:'pointer', fontWeight:'bold'}} onClick={()=>navigate('/login')}>Login</span></p>
+            <p>Already have an account ? <span style={{color:'#47B977', cursor:'pointer', fontWeight:'bold'}} onClick={()=>navigate('/login')}>Login</span></p>
           </div>
         </form>
       </div>

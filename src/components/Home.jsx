@@ -31,18 +31,16 @@ export default function CallToActionWithAnnotation() {
           py={{ base: 20, md: 36 }}>
           <Heading
             fontWeight={600}
-            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+            fontSize={{ base: 'xl', sm: '3xl', md: '5xl' }}
             color={'#fff'}
-            lineHeight={'110%'}>
-            Make money from <br />
+            lineHeight={'105%'}>
+            Explore eVTOL Modern Transportation <br />
             <Text as={'span'} color={'#fff'}>
-              your audience
+              Application
             </Text>
           </Heading>
           <Text color={'#fff'}>
-            Monetize your content by charging your most loyal readers and reward
-            them loyalty points. Give back to your loyal readers by granting
-            them access to your pre-releases and sneak-peaks.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem at adipisci vero dicta nesciunt eveniet ullam consectetur? Explicabo ad necessitatibus eos nesciunt perferendis magni ipsam ab, nisi dignissimos provident corrupti, voluptatum quis!.
           </Text>
           <Flex
           align="center" justify="center">
@@ -64,7 +62,7 @@ export default function CallToActionWithAnnotation() {
               _hover={{
                 bg: 'green.500',
               }}>
-              <Link to="/signup">
+              <Link to="/register">
                 Get Started
               </Link>
             </Button>
@@ -87,7 +85,7 @@ export default function CallToActionWithAnnotation() {
                 bg: 'green.500',
                 border: '1px solid #00ff00'
               }}>
-              <Link to="/signin">
+              <Link to="/login">
                 Login
               </Link>
             </Button>
@@ -95,23 +93,6 @@ export default function CallToActionWithAnnotation() {
               Learn more
             </Button> */}
             <Box>
-              {/* <Icon
-                as={Arrow}
-                color={useColorModeValue('gray.800', 'gray.300')}
-                w={71}
-                position={'absolute'}
-                right={-71}
-                top={'10px'}
-              /> */}
-              {/* <Text
-                fontSize={'lg'}
-                fontFamily={'Caveat'}
-                position={'absolute'}
-                right={'-125px'}
-                top={'-15px'}
-                transform={'rotate(10deg)'}>
-                Starting at $15/mo
-              </Text> */}
             </Box>
           </Stack>
           </Flex>

@@ -10,15 +10,15 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from './components/Home';
 // import SidebarWithHeader from './components/SidebarWithHeader';
 import DashboardItems from './components/DashboardItems';
-import SignIn from './components/SignIn';
-import SignUp from './components/SignUp';
+import Login from './components/Login';
+import Register from './components/Register';
 import AdminLogin from './pages/admin/AdminLogin';
 import Edit from './pages/admin/Edit';
 import Overview from './pages/admin/overview';
 import Add from './pages/admin/Add';
 import Delete from './pages/admin/Delete';
 import Settings from './pages/admin/Settings';
-import Dashboard from './components/Dashboard';
+// import Dashboard from './components/Dashboard';
 import Shipments from '././pages/Shipments';
 import ViewShipments from './pages/ViewShipments';
 import AddMedications from './pages/AddMedications';
@@ -38,8 +38,8 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/signin" element={<SignIn />} />
-      <Route path="/signup" element={<SignUp />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route path="/dashboard" element={<DashboardItems />}/>
 
       <Route path = "/admin_login" element = {<AdminLogin />}/>
@@ -48,7 +48,7 @@ function App() {
         <Route path = "/admin/add" element = {<Add/>}/>
         <Route path = "/admin/delete" element = {<Delete/>}/>
         <Route path = "/admin/settings" element = {<Settings/>}/>
-        <Route path = "/dashboard" element = {<Dashboard/>}/>
+        {/* <Route path = "/dashboard" element = {<Dashboard/>}/> */}
         <Route path = "/shipments" element = {<Shipments/>}/>
         <Route path = "/viewshipments" element = {<ViewShipments/>}/>
         <Route path = "/addmedications" element = {<AddMedications/>}/>

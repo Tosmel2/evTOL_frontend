@@ -1,4 +1,5 @@
-import {React, NavLink} from 'react';
+import React from 'react';
+import { NavLink } from "react-router-dom"
 import {
   Box,
   CloseButton,
@@ -20,7 +21,7 @@ import {
   RiDashboardLine,
 } from 'react-icons/ri'
 const LinkItems = [
-  { name: 'Dashboard', icon: RiDashboardLine, path: '/dashboard' },
+  { name: 'DashboardItems', icon: RiDashboardLine, path: '/dashboard' },
   { name: 'Tracking', icon: FiTrendingUp, path: '/tracking' },
   { name: 'Shipments', icon: FiCompass, path: '/shipments' },
   { name: 'Settings', icon:FiSettings, path: '/settings' },

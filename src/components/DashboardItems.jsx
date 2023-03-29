@@ -29,8 +29,8 @@ const DashboardItems = ({
     const[userid, setId] = useState("")
     
 
-    const url = `https://evtolbackend-production.up.railway.app/api/v1/evtol/available`;
-    const url2 = `https://evtolbackend-production.up.railway.app/api/v1/users/specificUser`;
+    const url = `https://evtol-app-y0kb.onrender.com/api/v1/evtol/available`;
+    const url2 = `https://evtol-app-y0kb.onrender.com/api/v1/users/specificUser`;
     
     
     useEffect(() => {
@@ -59,7 +59,7 @@ const DashboardItems = ({
 
 
     const setUser = (id) => {
-        axios.put(`https://evtolbackend-production.up.railway.app/api/v1/evtol/user/${id}`, {user: userid},{
+        axios.put(`https://evtol-app-y0kb.onrender.com/api/v1/evtol/user/${id}`, {user: userid},{
             headers: {
                 Authorization: `Bearer ${Cookies.get("TOKEN")}`
             }
