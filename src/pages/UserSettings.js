@@ -125,7 +125,7 @@ const UserSettings = ({
         onClose={() => onClose}
         display={{ base: 'none', md: 'block' }}
       />
-    <Box minH="100vh" w={{ base: '100%', md: "82%" }} ml="auto" bg={useColorModeValue('gray.100', 'gray.900')} style={{border: '2px solid blue'}}>
+    <Box minH="100vh" w={{ base: '100%', md: "82%" }} ml="auto" bg={useColorModeValue('gray.100', 'gray.900')}>
       <Drawer
         autoFocus={false}
         isOpen={isOpen}

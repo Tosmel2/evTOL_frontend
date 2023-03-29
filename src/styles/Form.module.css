@@ -53,7 +53,7 @@
   /* border: 2px solid rgb(4, 17, 63) */
 }
 .formWrapper .button, .deleteWrapper .button{
-  background-color: rgb(4, 17, 63);
+  background-color: rgb(72,187,120);
   /* background-color: rgb(4, 17, 63); */
   color: white;
   border-radius: 5px;
@@ -68,7 +68,7 @@
   border: none;
 }
 .settings .button{
-  background-color: rgb(4, 17, 63);
+  background-color: rgb(72,187,120);
   color: white;
   border-radius: 5px;
   padding: 10px 20px;

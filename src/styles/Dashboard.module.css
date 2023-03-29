@@ -64,7 +64,7 @@
   width: 100%;
 }
 .evtolCard button:hover{
-  background-color: rgb(72,187,120);;
+  background-color: rgb(72,187,120);
   cursor: pointer
 }
 .loading{
